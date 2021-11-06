@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt JS</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #main{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        #b1{
+             padding: 10px 20px;
+             background-color: coral;
+             font-size: larger;
+        }
+        #i1{
+            padding: 5px 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <h1>Input By Prompt</h1>
+        <h1>Please Click On The Button Given Below</h1>
+        <button id="b1" onclick="func()">Click Here!!</button> <br>
+        <input id="i1" type="text" >
+    </div>
+    <script>
+        function func(){
+            let pmt = prompt("enter Your Name","Yashrajsing")
+            if (pmt  != null) {
+             document.getElementById("i1").value = pmt
+            }
+        }
+    </script>
+    
+</body>
+</html>
